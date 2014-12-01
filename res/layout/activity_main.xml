@@ -4,18 +4,6 @@
     android:layout_height="match_parent"
     tools:context="com.example.handleconfigchangesinfragment.MainActivity" >
 
-    <Button
-        android:id="@+id/startStopButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/progressBar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
-        android:onClick="onStartStopClick"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp"
-        android:text="@string/start_label" />
-
     <TextView
         android:id="@+id/progressTextView"
         android:layout_width="wrap_content"
@@ -36,5 +24,25 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/startStopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:onClick="onStartStopClick"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="@string/start_label" />
+
+    <EditText
+        android:id="@+id/someEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10" />
 
 </RelativeLayout>
